@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mt-3">
+      <h1>Home</h1>
+      <p>Enter an integer to find out if it is even or odd</p>
+      <form action="{{ url_for('calculate') }}" method="get">
+        <div class="form-group">
+          <label for="number">Number</label>
+          <input
+            type="text"
+            class="form-control"
+            id="number"
+            name="number"
+            placeholder="Enter an integer"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
